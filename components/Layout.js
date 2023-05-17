@@ -16,14 +16,20 @@ export default function Layout({ title, children }) {
             <Link href="/" className="text-lg font-bold">
               Vip_Automation
             </Link>
-            <div className="flex font-bold gap-5">
-              <Link href="/cart">Cart</Link>
-              <Link href="/Login">Login</Link>
+            <div>
+              <Link href="/cart" className="p-2">
+                Cart
+              </Link>
+              <Link href="/Login" className="p-2">
+                Login
+              </Link>
             </div>
           </nav>
         </header>
         <main className="container m-auto mt-4 px-4">{children}</main>
-        <footer>footer</footer>
+        <footer className="flex h-10 justify-center items-center shadow-inner">
+          Copyright 2022 Vip Automation
+        </footer>
       </div>
     </>
   )
