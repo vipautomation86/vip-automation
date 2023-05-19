@@ -32,9 +32,18 @@
    6. add styles
 
 8. Handle Add To Cart
+
    1. define react contex
    2. define cart items state
    3. create add to cart action
    4. add reducer
    5. create store provider
    6. handle add to cart button
+
+9. Create Cart Page
+   1. create cart.js
+   2. use context to get cart items
+      1. npm i @heroicons/react
+   3. list item in cart item
+   4. redirect to cart items
+   5. redirect to cart screen after add to cart

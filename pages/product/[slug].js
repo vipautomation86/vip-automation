@@ -7,10 +7,11 @@ import { useRouter } from 'next/router'
 import React, { useContext } from 'react'
 
 export default function ProductScreen() {
-  const { state, dispatch } = useContext(Store)
+  const { state, dispatch } = useContext(Store) // useContext()
 
   const { query } = useRouter()
   const { slug } = query
+
   const product = data.products.find((x) => x.slug === slug)
 
   if (!product) {
@@ -18,7 +19,7 @@ export default function ProductScreen() {
   }
 
   const addToCartHandler = () => {
-    const existItem = state.cart.cartItems.find((x) => x.slug === product.slug)
+    const existItem = state.cart.cartItems.find((x) => x.slug === product.slug) // useContext()
     const quantity = existItem ? existItem.quantity + 1 : 1
 
     if (product.countInStock < quantity) {
