@@ -8,8 +8,10 @@ import React, { useContext } from 'react'
 
 export default function ProductScreen() {
   const { state, dispatch } = useContext(Store) // useContext()
+  // const router = useRouter() // hook router cart add item page
 
   const { query } = useRouter()
+
   const { slug } = query
 
   const product = data.products.find((x) => x.slug === slug)
@@ -25,9 +27,10 @@ export default function ProductScreen() {
     if (product.countInStock < quantity) {
       alert('Sorry. Product is Out Of Stock')
       return
-    } else {
-      dispatch({ type: 'CART_ADD_ITEM', payload: { ...product, quantity } })
     }
+    dispatch({ type: 'CART_ADD_ITEM', payload: { ...product, quantity } })
+
+    //router.push('/cart') // hook router cart add item page
   }
 
   return (

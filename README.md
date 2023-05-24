@@ -44,6 +44,7 @@
    1. create cart.js
    2. use context to get cart items
       1. npm i @heroicons/react
+      2. npm i @heroicons/react@v1
    3. list item in cart item
    4. redirect to cart items
    5. redirect to cart screen after add to cart
