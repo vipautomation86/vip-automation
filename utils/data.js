@@ -25,7 +25,7 @@ const data = {
       description: 'A popular shirt',
     },
     {
-      name: 'Free Shirt',
+      name: 'Slim Shirt',
       slug: 'slim-shirt',
       category: 'Shirts',
       images: '/images/shirts_3.jpg',
