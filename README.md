@@ -41,6 +41,7 @@
    6. handle add to cart button
 
 9. Create Cart Page
+
    1. create cart.js
    2. use context to get cart items
       1. npm i @heroicons/react
@@ -48,3 +49,8 @@
    3. list item in cart item
    4. redirect to cart items
    5. redirect to cart screen after add to cart
+
+10. Handle Changing Cart Item
+
+    1. add select box for quantity
+    2. handle select box change
